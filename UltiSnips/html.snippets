@@ -303,4 +303,28 @@ snippet movie "Embed QT movie (movie)" b
 	`!p x(snip)`>
 </object>
 endsnippet
+
+######################
+# ftl
+######################
+snippet assign "ftl assign" b
+<#assign $1 />$0
+endsnippet
+
+snippet split "ftl split func" b
+$1?split('${2:|}')$0
+endsnippet
+
+snippet if "ftl if func" b
+<#if $1>
+$2
+</#if>$0
+endsnippet
+
+snippet list "ftl list" b
+<#list $1 as $2 >
+$3
+</#list>$0
+endsnippet
+
 # vim:ft=snippets:

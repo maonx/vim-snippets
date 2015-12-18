@@ -14,3 +14,25 @@ endsnippet
 snippet ti "Inline tag" b
 <${1:tag}>${2:content}</${1/([\w:._-]+).*/$1/}>
 endsnippet
+
+snippet tip
+<param class="sn_tip" formType="tip" content="$1" /> $2
+endsnippet
+
+snippet text 
+<param description="" formType="text" label="$1" name="$2" ptype="text"></param>$3 
+endsnippet
+
+snippet textarea 
+<param description="" formType="textarea" label="$1" name="$2" ptype="text"></param>$3 
+endsnippet
+
+snippet pic 
+<param description="" formType="pic" label="$1" name="$2" ptype="pic"></param>$3 
+endsnippet
+
+snippet row "" b
+<row>
+$1
+</row>
+endsnippet
