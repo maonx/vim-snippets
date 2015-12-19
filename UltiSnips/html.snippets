@@ -311,7 +311,7 @@ snippet assign "ftl assign" b
 <#assign $1 />$0
 endsnippet
 
-snippet split "ftl split func" b
+snippet spl "ftl split func" b
 $1?split('${2:|}')$0
 endsnippet
 
@@ -327,4 +327,15 @@ $3
 </#list>$0
 endsnippet
 
+snippet color "set font color" b
+<#if $1>color:${$1};</#if>
+endsnippet
+
+snippet bgcolor "set background color" b
+<#if $1>background-color:${$1};</#if>
+endsnippet
+
+snippet bdc "set border color" b
+<#if $1>border-color:${$1};</#if>
+endsnippet
 # vim:ft=snippets:

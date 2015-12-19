@@ -36,3 +36,34 @@ snippet row "" b
 $1
 </row>
 endsnippet
+
+snippet gro "group" b
+<group title="$1">
+$2
+</group>$0
+endsnippet
+
+snippet cheb "checkbox" b 
+<param description="" formType="checkbox" label="$1" name="$2" ptype="checkbox">
+	<option value="${3:1}" checked="checked">$4</option>
+	<option value="${5:0}">$6</option>
+</param>$0 
+endsnippet
+
+snippet radio "radio" b 
+<param description="" formType="radio" label="$1" name="$2" ptype="radio">
+	<option value="${3:1}" checked="checked">$4</option>
+	<option value="${5:0}">$6</option>
+</param>$0 
+endsnippet
+
+snippet disp "display or not" b 
+<param description="" formType="radio" label="${1:显示模式}" name="$2" ptype="radio">
+	<option value="1" checked="checked">显示</option>
+	<option value="0">隐藏</option>
+</param>$0 
+endsnippet
+
+snippet color "set color" b
+<param formType="color" label="$1" name="$2" ptype="color" value="#ffffff" class="sn_color"/>$0 
+endsnippet
